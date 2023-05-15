@@ -2,13 +2,16 @@
 <html>
 <head>
   <title>RailsWeather</title>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+    <main class="container mx-auto mt-28 px-5 flex">
+  
 <%= yield %>
+    </main>
 
 </body>
 </html>
